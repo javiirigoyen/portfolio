@@ -1,0 +1,38 @@
+.technologies {
+  padding: 90px;
+  min-height: 80vh;
+  background-color: #262626;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  color: white;
+}
+
+.container h2 {
+  margin: 0 auto 80px auto;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+}
