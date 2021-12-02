@@ -3,7 +3,7 @@ import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div>
+    <div style={{ minHeight: "100vh" }}>
       <Home />
     </div>
   );
