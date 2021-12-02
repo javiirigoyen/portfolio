@@ -10,7 +10,7 @@ function NavBar() {
         <div className={s.buttons}>
           <div>Home</div>
           <div>About</div>
-          <div>Tecnologies</div>
+          <div>Technologies</div>
           <div>Projects</div>
           <div>Contact Me</div>
         </div>
