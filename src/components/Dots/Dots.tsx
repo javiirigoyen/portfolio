@@ -1,5 +1,5 @@
 import React from "react";
-import dots from "../../assets/imgs/dots.png";
+import dots from "../../assets/imgs/dots2.png";
 import s from "./Dots.module.css";
 
 interface DotsProps {

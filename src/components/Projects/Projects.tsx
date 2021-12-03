@@ -7,7 +7,7 @@ import s from "./Projects.module.css";
 function Projects() {
   return (
     <div id="projects" className={s.projects}>
-      <Dots top="50%" left="10px" />
+      <Dots top="50%" left="0px" />
       <div className={s.container}>
         <h2>Projects</h2>
         <div className={s.items}>
