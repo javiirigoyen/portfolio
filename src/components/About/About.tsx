@@ -1,5 +1,6 @@
 import React from "react";
 import about from "../../assets/imgs/about2.jpg";
+import Dots from "../Dots/Dots";
 import s from "./About.module.css";
 
 const link: string =
@@ -8,6 +9,7 @@ const link: string =
 function About() {
   return (
     <div id="about" className={s.about}>
+      <Dots top="30%" left="10px" />
       <div className={s.container}>
         <div className={s.img}>
           <div className={s.border}></div>
