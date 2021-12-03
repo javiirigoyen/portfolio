@@ -16,3 +16,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.fadeIn {
+  opacity: 0;
+}
+
+.fadeInVisible {
+  transition: opacity 1s ease-in;
+  opacity: 1;
+}

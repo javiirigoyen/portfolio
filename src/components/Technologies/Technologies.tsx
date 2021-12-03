@@ -1,15 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { technologies } from "../../assets/jsons/technologies";
 import { useOnScreen } from "../../utils";
 import Dots from "../Dots/Dots";
 import s from "./Technologies.module.css";
 
 function Technologies({ setSelect }: any) {
+  const [start, setStart] = useState(false);
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
 
   useEffect(() => {
     if (isVisible) {
+      setStart(true);
       setSelect("Technologies");
     }
   }, [isVisible, setSelect]);
@@ -17,7 +19,7 @@ function Technologies({ setSelect }: any) {
   return (
     <div id="technologies" className={s.technologies}>
       <Dots top="50%" left="88.5%" />
-      <div className={s.container}>
+      <div className={`${s.container} fadeIn ${start && "fadeInVisible"}`}>
         <h2 ref={ref}>Technologies</h2>
         <div className={s.items}>
           {technologies.map((t, i) => (

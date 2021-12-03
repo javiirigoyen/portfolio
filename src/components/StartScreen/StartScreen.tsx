@@ -1,20 +1,25 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useOnScreen } from "../../utils";
 import profile from "../../assets/imgs/profile.jpg";
 import s from "./StartScreen.module.css";
 
 function StartScreen({ setSelect }: any) {
+  const [start, setStart] = useState(false);
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
 
   useEffect(() => {
     if (isVisible) {
+      setStart(true);
       setSelect("Home");
     }
   }, [isVisible, setSelect]);
 
   return (
-    <div id="home" className={s.container}>
+    <div
+      id="home"
+      className={`${s.container} fadeIn ${start && "fadeInVisible"}`}
+    >
       <div className={s.info}>
         <h4 ref={ref}>Hi There 👋 I'm</h4>
         <p>Federico{"\n"}Avelin</p>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useOnScreen } from "../../utils";
 import Info from "./Info/Info";
 import Form from "./Form/Form";
@@ -6,11 +6,13 @@ import Dots from "../Dots/Dots";
 import s from "./Contact.module.css";
 
 function Contact({ setSelect }: any) {
+  const [start, setStart] = useState(false);
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
 
   useEffect(() => {
     if (isVisible) {
+      setStart(true);
       setSelect("Contact");
     }
   }, [isVisible, setSelect]);
@@ -18,7 +20,7 @@ function Contact({ setSelect }: any) {
   return (
     <div id="contact" className={s.contact}>
       <Dots top="35%" left="88.5%" />
-      <div className={s.container}>
+      <div className={`${s.container} fadeIn ${start && "fadeInVisible"}`}>
         <h2 ref={ref}>Contact Me</h2>
         <div className={s.group}>
           <Info />
