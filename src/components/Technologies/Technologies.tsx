@@ -6,7 +6,7 @@ import s from "./Technologies.module.css";
 function Technologies() {
   return (
     <div id="technologies" className={s.technologies}>
-      <Dots top="50%" left="88%" />
+      <Dots top="50%" left="88.5%" />
       <div className={s.container}>
         <h2>Technologies</h2>
         <div className={s.items}>
