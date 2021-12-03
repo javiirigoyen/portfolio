@@ -52,8 +52,13 @@ function NavBar({ select, setSelect }: NavProps) {
           <img src={logo} alt="logo" />
         </a>
         <div className={s.buttons}>
-          {items.map((item) => (
-            <NavItem title={item} select={select} setSelect={setSelect} />
+          {items.map((item, index) => (
+            <NavItem
+              key={`${item}_${index}`}
+              title={item}
+              select={select}
+              setSelect={setSelect}
+            />
           ))}
         </div>
       </div>
