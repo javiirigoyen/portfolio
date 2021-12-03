@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { projects } from "../../assets/jsons/projects";
+import { useOnScreen } from "../../utils";
 import Card from "./Card/Card";
 import Dots from "../Dots/Dots";
 import s from "./Projects.module.css";
 
-function Projects() {
+function Projects({ setSelect }: any) {
+  const ref = useRef(null);
+  const isVisible = useOnScreen(ref);
+
+  useEffect(() => {
+    if (isVisible) {
+      setSelect("Projects");
+    }
+  }, [isVisible, setSelect]);
+
   return (
     <div id="projects" className={s.projects}>
       <Dots top="50%" left="0px" />
-      <div className={s.container}>
+      <div ref={ref} className={s.container}>
         <h2>Projects</h2>
         <div className={s.items}>
           {projects.map((p, i) => (

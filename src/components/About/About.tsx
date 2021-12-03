@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import about from "../../assets/imgs/about2.jpg";
 import Dots from "../Dots/Dots";
+import { useOnScreen } from "../../utils";
 import s from "./About.module.css";
 
 const link: string =
   "https://drive.google.com/file/d/1SbpEuBhXu_17X85YFGg7HFuSl8UqvuGB/view?usp=sharing";
 
-function About() {
+function About({ setSelect }: any) {
+  const ref = useRef(null);
+  const isVisible = useOnScreen(ref);
+
+  useEffect(() => {
+    if (isVisible) {
+      setSelect("About");
+    }
+  }, [isVisible, setSelect]);
+
   return (
     <div id="about" className={s.about}>
       <Dots top="30%" left="0px" />
-      <div className={s.container}>
+      <div ref={ref} className={s.container}>
         <div className={s.img}>
           <div className={s.border}></div>
           <img src={about} alt="about" />
