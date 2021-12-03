@@ -12,12 +12,12 @@ function Home() {
 
   return (
     <div className={s.container}>
-      <NavBar select={select} setSelect={setSelect} />
+      <NavBar select={select} />
       <StartScreen setSelect={setSelect} />
-      <About />
-      <Technologies />
-      <Projects />
-      <Contact />
+      <About setSelect={setSelect} />
+      <Technologies setSelect={setSelect} />
+      <Projects setSelect={setSelect} />
+      <Contact setSelect={setSelect} />
     </div>
   );
 }
