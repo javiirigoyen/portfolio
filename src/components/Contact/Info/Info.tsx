@@ -16,8 +16,14 @@ function ButtonInfo({ src, alt, title, href }: InfoObj) {
 function Info() {
   return (
     <div className={s.container}>
-      {info.map((i) => (
-        <ButtonInfo src={i.src} alt={i.alt} title={i.title} href={i.href} />
+      {info.map((i, index) => (
+        <ButtonInfo
+          key={`${i.title}_${index}`}
+          src={i.src}
+          alt={i.alt}
+          title={i.title}
+          href={i.href}
+        />
       ))}
     </div>
   );
