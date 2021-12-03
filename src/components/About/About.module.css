@@ -43,6 +43,10 @@
   max-width: 400px;
 }
 
+.info a {
+  text-decoration: none;
+}
+
 .button {
   margin-top: auto;
   background-color: yellow;
