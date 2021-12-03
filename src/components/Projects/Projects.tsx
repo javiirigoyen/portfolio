@@ -1,11 +1,13 @@
 import React from "react";
 import { projects } from "../../assets/jsons/projects";
 import Card from "./Card/Card";
+import Dots from "../Dots/Dots";
 import s from "./Projects.module.css";
 
 function Projects() {
   return (
     <div id="projects" className={s.projects}>
+      <Dots top="50%" left="10px" />
       <div className={s.container}>
         <h2>Projects</h2>
         <div className={s.items}>

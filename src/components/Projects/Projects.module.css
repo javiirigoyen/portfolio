@@ -1,4 +1,5 @@
 .projects {
+  position: relative;
   padding-top: 90px;
   min-height: 80vh;
   background-color: #262626;
