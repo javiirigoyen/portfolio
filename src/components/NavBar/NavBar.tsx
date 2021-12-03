@@ -13,22 +13,15 @@ const items: string[] = [
 interface Item {
   title: string;
   select: string;
-  setSelect: any;
 }
 
 interface NavProps {
   select: string;
-  setSelect: any;
 }
 
-function NavItem({ title, select, setSelect }: Item) {
+function NavItem({ title, select }: Item) {
   return (
-    <div
-      className={s.item}
-      onClick={() => {
-        setSelect(title);
-      }}
-    >
+    <div className={s.item}>
       <a
         style={title === select ? { color: "yellow", fontWeight: "bold" } : {}}
         href={`#${title[0].toLocaleLowerCase() + title.substr(1)}`}
@@ -39,26 +32,16 @@ function NavItem({ title, select, setSelect }: Item) {
   );
 }
 
-function NavBar({ select, setSelect }: NavProps) {
+function NavBar({ select }: NavProps) {
   return (
     <div className={s.nav}>
       <div className={s.container}>
-        <a
-          href="#home"
-          onClick={() => {
-            setSelect("Home");
-          }}
-        >
+        <a href="#home">
           <img src={logo} alt="logo" />
         </a>
         <div className={s.buttons}>
           {items.map((item, index) => (
-            <NavItem
-              key={`${item}_${index}`}
-              title={item}
-              select={select}
-              setSelect={setSelect}
-            />
+            <NavItem key={`${item}_${index}`} title={item} select={select} />
           ))}
         </div>
       </div>
