@@ -18,8 +18,8 @@ function Contact({ setSelect }: any) {
   return (
     <div id="contact" className={s.contact}>
       <Dots top="35%" left="88.5%" />
-      <div ref={ref} className={s.container}>
-        <h2>Contact Me</h2>
+      <div className={s.container}>
+        <h2 ref={ref}>Contact Me</h2>
         <div className={s.group}>
           <Info />
           <Form />

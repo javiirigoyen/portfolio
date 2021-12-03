@@ -18,8 +18,8 @@ function Projects({ setSelect }: any) {
   return (
     <div id="projects" className={s.projects}>
       <Dots top="50%" left="0px" />
-      <div ref={ref} className={s.container}>
-        <h2>Projects</h2>
+      <div className={s.container}>
+        <h2 ref={ref}>Projects</h2>
         <div className={s.items}>
           {projects.map((p, i) => (
             <Card

@@ -17,8 +17,8 @@ function Technologies({ setSelect }: any) {
   return (
     <div id="technologies" className={s.technologies}>
       <Dots top="50%" left="88.5%" />
-      <div ref={ref} className={s.container}>
-        <h2>Technologies</h2>
+      <div className={s.container}>
+        <h2 ref={ref}>Technologies</h2>
         <div className={s.items}>
           {technologies.map((t, i) => (
             <div key={`${t.title}_${i}`} className={s.item}>
