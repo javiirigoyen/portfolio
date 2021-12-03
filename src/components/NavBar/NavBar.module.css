@@ -18,5 +18,23 @@
 .buttons {
   color: white;
   display: flex;
-  gap: 10px;
+  gap: 40px;
+}
+
+.item a {
+  text-decoration: none;
+  color: white;
+}
+
+.item ::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background: white;
+  transition: 0.3s;
+}
+
+.item:hover ::after {
+  width: 100%;
 }

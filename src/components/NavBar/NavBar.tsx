@@ -1,18 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/imgs/logo.png";
 import s from "./NavBar.module.css";
 
+const items: string[] = [
+  "Home",
+  "About",
+  "Technologies",
+  "Projects",
+  "Contact",
+];
+
+interface Item {
+  title: string;
+  select: string;
+  setSelect: any;
+}
+
+function NavItem({ title, select, setSelect }: Item) {
+  return (
+    <div
+      className={s.item}
+      onClick={() => {
+        setSelect(title);
+      }}
+    >
+      <a
+        style={title === select ? { color: "yellow", fontWeight: "bold" } : {}}
+        href={`#${title[0].toLocaleLowerCase() + title.substr(1)}`}
+      >
+        {title}
+      </a>
+    </div>
+  );
+}
+
 function NavBar() {
+  const [select, setSelect] = useState("");
+
   return (
     <div className={s.nav}>
       <div className={s.container}>
-        <img src={logo} alt="logo" />
+        <a
+          href="#home"
+          onClick={() => {
+            setSelect("Home");
+          }}
+        >
+          <img src={logo} alt="logo" />
+        </a>
         <div className={s.buttons}>
-          <div>Home</div>
-          <div>About</div>
-          <div>Technologies</div>
-          <div>Projects</div>
-          <div>Contact Me</div>
+          {items.map((item) => (
+            <NavItem title={item} select={select} setSelect={setSelect} />
+          ))}
         </div>
       </div>
     </div>
