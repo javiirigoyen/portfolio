@@ -1,0 +1,22 @@
+.contact {
+  padding-top: 90px;
+  min-height: 80vh;
+  background-color: #262626;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+.container h2 {
+  margin: 0 auto 60px auto;
+}
+
+.group {
+  display: flex;
+}
