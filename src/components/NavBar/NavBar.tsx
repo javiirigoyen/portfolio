@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../../assets/imgs/logo.png";
 import s from "./NavBar.module.css";
 
@@ -12,6 +12,11 @@ const items: string[] = [
 
 interface Item {
   title: string;
+  select: string;
+  setSelect: any;
+}
+
+interface NavProps {
   select: string;
   setSelect: any;
 }
@@ -34,9 +39,7 @@ function NavItem({ title, select, setSelect }: Item) {
   );
 }
 
-function NavBar() {
-  const [select, setSelect] = useState("");
-
+function NavBar({ select, setSelect }: NavProps) {
   return (
     <div className={s.nav}>
       <div className={s.container}>
