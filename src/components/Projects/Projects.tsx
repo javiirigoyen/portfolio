@@ -5,7 +5,7 @@ import s from "./Projects.module.css";
 
 function Projects() {
   return (
-    <div className={s.projects}>
+    <div id="projects" className={s.projects}>
       <div className={s.container}>
         <h2>Projects</h2>
         <div className={s.items}>

@@ -4,7 +4,7 @@ import s from "./About.module.css";
 
 function About() {
   return (
-    <div className={s.about}>
+    <div id="about" className={s.about}>
       <div className={s.container}>
         <div className={s.img}>
           <div className={s.border}></div>

@@ -4,7 +4,7 @@ import s from "./StartScreen.module.css";
 
 function StartScreen() {
   return (
-    <div className={s.container}>
+    <div id="home" className={s.container}>
       <div className={s.info}>
         <h4>Hi There 👋 I'm</h4>
         <p>Federico{"\n"}Avelin</p>

@@ -4,7 +4,7 @@ import s from "./Technologies.module.css";
 
 function Technologies() {
   return (
-    <div className={s.technologies}>
+    <div id="technologies" className={s.technologies}>
       <div className={s.container}>
         <h2>Technologies</h2>
         <div className={s.items}>

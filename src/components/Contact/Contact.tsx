@@ -5,7 +5,7 @@ import s from "./Contact.module.css";
 
 function Contact() {
   return (
-    <div className={s.contact}>
+    <div id="contact" className={s.contact}>
       <div className={s.container}>
         <h2>Contact Me</h2>
         <div className={s.group}>
