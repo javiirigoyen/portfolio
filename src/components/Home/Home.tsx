@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import StartScreen from "../StartScreen/StartScreen";
 import About from "../About/About";
@@ -8,10 +8,12 @@ import Contact from "../Contact/Contact";
 import s from "./Home.module.css";
 
 function Home() {
+  const [select, setSelect] = useState("");
+
   return (
     <div className={s.container}>
-      <NavBar />
-      <StartScreen />
+      <NavBar select={select} setSelect={setSelect} />
+      <StartScreen setSelect={setSelect} />
       <About />
       <Technologies />
       <Projects />
