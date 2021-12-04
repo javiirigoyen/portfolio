@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 import s from "./Form.module.css";
 
 function Form() {
@@ -17,9 +18,21 @@ function Form() {
       .then(
         (result) => {
           console.log(result.text);
+          Swal.fire({
+            title: "Message send!",
+            icon: "success",
+            confirmButtonText: "OK",
+            confirmButtonColor: "green",
+          });
         },
         (error) => {
           console.log(error.text);
+          Swal.fire({
+            title: "Message not send!",
+            icon: "error",
+            confirmButtonText: "OK",
+            confirmButtonColor: "green",
+          });
         }
       );
 
@@ -41,7 +54,6 @@ function Form() {
       );
 
     e.target.reset();
-    alert("Message send");
   };
 
   return (
