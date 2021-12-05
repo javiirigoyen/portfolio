@@ -5,7 +5,7 @@ import Form from "./Form/Form";
 import Dots from "../Dots/Dots";
 import s from "./Contact.module.css";
 
-function Contact({ setSelect }: any) {
+function Contact({ setSelect, lang }: any) {
   const [start, setStart] = useState(false);
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
@@ -21,7 +21,7 @@ function Contact({ setSelect }: any) {
     <div id="contact" className={s.contact}>
       <Dots top="35%" left="88.5%" />
       <div className={`${s.container} fadeIn ${start && "fadeInVisible"}`}>
-        <h2 ref={ref}>Contact Me</h2>
+        <h2 ref={ref}>{lang === "es" ? "Contáctame" : "Contact Me"}</h2>
         <div className={s.group}>
           <Info />
           <Form />

@@ -5,7 +5,7 @@ import Card from "./Card/Card";
 import Dots from "../Dots/Dots";
 import s from "./Projects.module.css";
 
-function Projects({ setSelect }: any) {
+function Projects({ setSelect, lang }: any) {
   const [start, setStart] = useState(false);
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
@@ -21,14 +21,14 @@ function Projects({ setSelect }: any) {
     <div id="projects" className={s.projects}>
       <Dots top="50%" left="0px" />
       <div className={`${s.container} fadeIn ${start && "fadeInVisible"}`}>
-        <h2 ref={ref}>Projects</h2>
+        <h2 ref={ref}>{lang === "es" ? "Proyectos" : "Projects"}</h2>
         <div className={s.items}>
           {projects.map((p, i) => (
             <Card
               key={`${p.title}_${i}`}
               title={p.title}
               img={p.img}
-              description={p.description}
+              description={lang === "es" ? p.descriptionEs : p.description}
               prod={p.prod}
               repo={p.repo}
             />
