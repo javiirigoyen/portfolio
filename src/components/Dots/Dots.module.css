@@ -4,3 +4,9 @@
   filter: invert(1) sepia(1) saturate(25) hue-rotate(900deg) brightness(0.4)
     grayscale(100%);
 }
+
+@media screen and (max-width: 1560px) {
+  .container {
+    display: none;
+  }
+}

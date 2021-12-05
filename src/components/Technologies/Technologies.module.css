@@ -38,3 +38,14 @@
   width: 100px;
   height: 100px;
 }
+
+@media screen and (max-width: 530px) {
+  .items {
+    grid-column-gap: 100px;
+  }
+
+  .technologies {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

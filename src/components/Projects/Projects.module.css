@@ -21,5 +21,7 @@
 .items {
   display: flex;
   flex-wrap: wrap;
-  gap: 150px;
+  justify-content: center;
+  grid-column-gap: 150px;
+  row-gap: 40px;
 }

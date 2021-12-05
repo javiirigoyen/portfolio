@@ -21,3 +21,11 @@
 .group {
   display: flex;
 }
+
+@media screen and (max-width: 1300px) {
+  .group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}

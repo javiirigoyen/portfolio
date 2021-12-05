@@ -63,3 +63,20 @@
   cursor: pointer;
   box-shadow: 0px 0px 5px 2px #f6f200;
 }
+
+@media screen and (max-width: 1020px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    margin-top: 20px;
+    gap: 40px;
+  }
+
+  .img {
+    transform: scale(0.75);
+  }
+}
