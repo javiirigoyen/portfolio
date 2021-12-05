@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../../assets/imgs/logo.png";
+import Sidebar from "./Sidebar/Sidebar";
 import s from "./NavBar.module.css";
 
-const items: string[] = [
+export const items: string[] = [
   "Home",
   "About",
   "Technologies",
@@ -19,7 +20,7 @@ interface NavProps {
   select: string;
 }
 
-function NavItem({ title, select }: Item) {
+export function NavItem({ title, select }: Item) {
   return (
     <div className={s.item}>
       <a
@@ -44,6 +45,7 @@ function NavBar({ select }: NavProps) {
             <NavItem key={`${item}_${index}`} title={item} select={select} />
           ))}
         </div>
+        <Sidebar select={select} />
       </div>
     </div>
   );
