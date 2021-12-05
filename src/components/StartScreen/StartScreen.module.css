@@ -54,7 +54,6 @@
 
 @media screen and (max-width: 940px) {
   .container {
-    flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: center;
     gap: 20px;
