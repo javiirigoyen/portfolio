@@ -21,11 +21,11 @@ function Home() {
   return (
     <div className={s.container}>
       <NavBar select={select} setLang={setLang} />
-      <StartScreen setSelect={setSelect} />
-      <About setSelect={setSelect} />
-      <Technologies setSelect={setSelect} />
-      <Projects setSelect={setSelect} />
-      <Contact setSelect={setSelect} />
+      <StartScreen setSelect={setSelect} lang={lang} />
+      <About setSelect={setSelect} lang={lang} />
+      <Technologies setSelect={setSelect} lang={lang} />
+      <Projects setSelect={setSelect} lang={lang} />
+      <Contact setSelect={setSelect} lang={lang} />
       <Footer />
     </div>
   );
