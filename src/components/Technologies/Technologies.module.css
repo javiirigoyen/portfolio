@@ -22,7 +22,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 150px;
+  grid-column-gap: 150px;
+  row-gap: 80px;
 }
 
 .item {
