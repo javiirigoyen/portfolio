@@ -7,9 +7,10 @@ import s from "./Sidebar.module.css";
 interface SidebarProps {
   select: string;
   setLang: any;
+  lang: string;
 }
 
-function Sidebar({ select, setLang }: SidebarProps) {
+function Sidebar({ select, setLang, lang }: SidebarProps) {
   const [open, setOpen] = useState(false);
   const [delay, setDelay] = useState(false);
   const [start, setStart] = useState(false);
@@ -39,7 +40,13 @@ function Sidebar({ select, setLang }: SidebarProps) {
       >
         <div className={s.items}>
           {items.map((item, index) => (
-            <NavItem key={`${item}_${index}`} title={item} select={select} />
+            <NavItem
+              key={`${item}_${index}`}
+              title={item}
+              select={select}
+              lang={lang}
+              index={index}
+            />
           ))}
         </div>
         <Flags setLang={setLang} />

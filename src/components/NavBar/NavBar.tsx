@@ -12,30 +12,41 @@ export const items: string[] = [
   "Contact",
 ];
 
+const itemsEs: string[] = [
+  "Inicio",
+  "Sobre Mi",
+  "Tecnologías",
+  "Proyectos",
+  "Contacto",
+];
+
 interface Item {
   title: string;
   select: string;
+  index: number;
+  lang: string;
 }
 
 interface NavProps {
   select: string;
   setLang: any;
+  lang: string;
 }
 
-export function NavItem({ title, select }: Item) {
+export function NavItem({ title, select, index, lang }: Item) {
   return (
     <div className={s.item}>
       <a
         style={title === select ? { color: "yellow", fontWeight: "bold" } : {}}
         href={`#${title[0].toLocaleLowerCase() + title.substr(1)}`}
       >
-        {title}
+        {lang === "es" ? itemsEs[index] : title}
       </a>
     </div>
   );
 }
 
-function NavBar({ select, setLang }: NavProps) {
+function NavBar({ select, setLang, lang }: NavProps) {
   return (
     <div className={s.nav}>
       <div className={s.container}>
@@ -44,11 +55,17 @@ function NavBar({ select, setLang }: NavProps) {
         </a>
         <div className={s.buttons}>
           {items.map((item, index) => (
-            <NavItem key={`${item}_${index}`} title={item} select={select} />
+            <NavItem
+              key={`${item}_${index}`}
+              title={item}
+              select={select}
+              lang={lang}
+              index={index}
+            />
           ))}
           <Flags setLang={setLang} />
         </div>
-        <Sidebar select={select} setLang={setLang} />
+        <Sidebar select={select} setLang={setLang} lang={lang} />
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ function Home() {
 
   return (
     <div className={s.container}>
-      <NavBar select={select} setLang={setLang} />
+      <NavBar select={select} setLang={setLang} lang={lang} />
       <StartScreen setSelect={setSelect} lang={lang} />
       <About setSelect={setSelect} lang={lang} />
       <Technologies setSelect={setSelect} lang={lang} />
