@@ -48,7 +48,7 @@ function NavBar({ select, setLang }: NavProps) {
           ))}
           <Flags setLang={setLang} />
         </div>
-        <Sidebar select={select} />
+        <Sidebar select={select} setLang={setLang} />
       </div>
     </div>
   );
