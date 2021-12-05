@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import hamburger from "../../../assets/imgs/hamburger.png";
 import { items, NavItem } from "../NavBar";
+import Flags from "../Flags/Flags";
 import s from "./Sidebar.module.css";
 
 interface SidebarProps {
   select: string;
+  setLang: any;
 }
 
-function Sidebar({ select }: SidebarProps) {
+function Sidebar({ select, setLang }: SidebarProps) {
   const [open, setOpen] = useState(false);
   const [delay, setDelay] = useState(false);
   const [start, setStart] = useState(false);
@@ -40,6 +42,7 @@ function Sidebar({ select }: SidebarProps) {
             <NavItem key={`${item}_${index}`} title={item} select={select} />
           ))}
         </div>
+        <Flags setLang={setLang} />
       </div>
     </div>
   );
