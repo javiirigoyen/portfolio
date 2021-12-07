@@ -21,6 +21,9 @@ const description: Description = {
 const link: string =
   "https://drive.google.com/file/d/1SbpEuBhXu_17X85YFGg7HFuSl8UqvuGB/view?usp=sharing";
 
+const linkEs: string =
+  "https://drive.google.com/file/d/1YknFJJPy9p7QfCPxH8VmoF-c3WZ5aU0J/view?usp=sharing";
+
 function About({ setSelect, lang }: AboutProps) {
   const [start, setStart] = useState(false);
   const ref = useRef(null);
@@ -44,7 +47,11 @@ function About({ setSelect, lang }: AboutProps) {
         <div className={s.info}>
           <h2 ref={ref}>{lang === "es" ? "Sobre mi" : "About Me"}</h2>
           <p>{lang === "es" ? description.es : description.en}</p>
-          <a href={link} rel="noopener noreferrer" target="_blank">
+          <a
+            href={lang === "es" ? linkEs : link}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <div className={s.button}>
               {lang === "es" ? "Descargar CV" : "Download CV"}
             </div>
