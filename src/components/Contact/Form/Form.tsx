@@ -60,7 +60,7 @@ function Form() {
     <div className={s.container}>
       <form onSubmit={sendEmail}>
         <input type="text" placeholder="Full Name*" required name="name" />
-        <input type="text" placeholder="Email*" required name="email" />
+        <input type="email" placeholder="Email*" required name="email" />
         <input type="text" placeholder="Subject*" required name="subject" />
         <textarea rows={5} placeholder="Message*" required name="message" />
         <button type="submit">Submit</button>
