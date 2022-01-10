@@ -1,6 +1,8 @@
 import webService from "../imgs/web-service.png";
 import videoGames from "../imgs/videogames.png";
 import gifFinder from "../imgs/gif-finder.png";
+import portfolio from "../imgs/portfolio.png";
+import snake from "../imgs/snake.png";
 
 export interface Project {
   title: string;
@@ -33,6 +35,16 @@ export const projects: Project[] = [
     prod: "https://pi-videogames-kappa.vercel.app/",
   },
   {
+    title: "Snake React",
+    description:
+      "Classic arcade videogame of Snake. It has 3 difficulties, sounds and responsive. Functional on mobile devices.",
+    descriptionEs:
+      "Clásico videojuego arcade de Snake. Tiene 3 dificultades, sonidos y responsive. Funcional el dispositivos mobiles.",
+    img: snake,
+    repo: "https://github.com/Fedex159/snake-react",
+    prod: "https://snake-react-ten.vercel.app/",
+  },
+  {
     title: "Gif Finder",
     description:
       "Gifs app. Some of the main functions are: GIF search, color selector, add to favorites, carousel.",
@@ -41,5 +53,15 @@ export const projects: Project[] = [
     img: gifFinder,
     repo: "https://github.com/Fedex159/gif-finder",
     prod: "https://gif-finder-mu.vercel.app/",
+  },
+  {
+    title: "Portfolio",
+    description:
+      "My personal portfolio. Made with React and Typescript. You will find my personal information, projects and technologies.",
+    descriptionEs:
+      "Mi portfolio personal. Hecho con React y Typescript. Encontraran mi información personal, proyectos y tecnologías.",
+    img: portfolio,
+    repo: "https://github.com/Fedex159/federico-avelin-portfolio",
+    prod: "https://federico-avelin-portfolio.vercel.app/",
   },
 ];
