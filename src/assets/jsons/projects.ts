@@ -2,6 +2,7 @@ import webService from "../imgs/web-service.png";
 import videoGames from "../imgs/videogames.png";
 import gifFinder from "../imgs/gif-finder.png";
 import portfolio from "../imgs/portfolio.png";
+import liteflix from "../imgs/liteflix.png";
 import snake from "../imgs/snake.png";
 
 export interface Project {
@@ -36,10 +37,16 @@ export const projects: Project[] = [
   },
   {
     title: "Snake React",
-    description:
-      "Classic arcade videogame of Snake. It has 3 difficulties, sounds and responsive. Functional on mobile devices.",
-    descriptionEs:
-      "Clásico videojuego arcade de Snake. Tiene 3 dificultades, sonidos y responsive. Funcional el dispositivos mobiles.",
+    description: `
+      Classic arcade videogame of Snake. 
+      It has 3 difficulties, sounds and responsive. 
+      Functional on mobile devices.
+    `,
+    descriptionEs: `
+    Clásico videojuego arcade de Snake. 
+    Tiene 3 dificultades, sonidos y responsive. 
+    Funcional en dispositivos mobiles.
+    `,
     img: snake,
     repo: "https://github.com/Fedex159/snake-react",
     prod: "https://snake-react-ten.vercel.app/",
@@ -56,12 +63,30 @@ export const projects: Project[] = [
   },
   {
     title: "Portfolio",
-    description:
-      "My personal portfolio. Made with React and Typescript. You will find my personal information, projects and technologies.",
-    descriptionEs:
-      "Mi portfolio personal. Hecho con React y Typescript. Encontraran mi información personal, proyectos y tecnologías.",
+    description: `
+      My personal portfolio. Made with React and Typescript. 
+      You will find my personal information, projects and technologies.
+      `,
+    descriptionEs: `
+      Mi portfolio personal. Hecho con React y Typescript. 
+      Encontraran mi información personal, proyectos y tecnologías.
+      `,
     img: portfolio,
     repo: "https://github.com/Fedex159/federico-avelin-portfolio",
     prod: "https://federico-avelin-portfolio.vercel.app/",
+  },
+  {
+    title: "Liteflix",
+    description: `
+      Dynamic movie catalog. Challenge done as
+      challenged for litebox company.
+    `,
+    descriptionEs: `
+      Catalogo de películas dinámico. Challenge hecho como
+      desafió para la empresa litebox.
+    `,
+    img: liteflix,
+    repo: "https://github.com/Fedex159/liteflix-challenge",
+    prod: "https://liteflix-challenge-five.vercel.app/",
   },
 ];
