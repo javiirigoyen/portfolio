@@ -15,8 +15,8 @@ export const info: InfoObj[] = [
   {
     src: gmail,
     alt: "gmail",
-    title: "javieririgoyen96@gmail.com",
-    href: "mailto:javieririgoyen96@gmail.com",
+    title: "javier_irigoyen96@hotmail.com",
+    href: "mailto:javier_irigoyen96@hotmail.com",
   },
   {
     src: whatsapp,

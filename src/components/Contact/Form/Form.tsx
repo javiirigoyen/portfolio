@@ -6,15 +6,17 @@ import s from "./Form.module.css";
 function Form() {
   const sendEmail = (e: any) => {
     e.preventDefault();
-
+console.log(e)
     // response to me
     emailjs
       .sendForm(
-        "gmail",
-        "template_ftcz89g",
+        "service_x50wsq7",
+        "template_dpwxk8s",
         e.target,
-        "user_q5xXUPs7S6zOFf9qVhSyC"
+        "CpcQ6wymK05yLy47j"
+
       )
+
       .then(
         (result) => {
           console.log(result.text);
@@ -39,10 +41,10 @@ function Form() {
     // response to user
     emailjs
       .sendForm(
-        "gmail",
-        "template_72vru4j",
+        "service_x50wsq7",
+        "template_dpwxk8s",
         e.target,
-        "user_q5xXUPs7S6zOFf9qVhSyC"
+        "CpcQ6wymK05yLy47j"
       )
       .then(
         (result) => {
