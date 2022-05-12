@@ -29,12 +29,12 @@
 }
 
 .container h3 {
-  color: yellow;
+  color: rgb(44, 195, 233);
 }
 
 .button {
   margin-top: 20px;
-  background-color: yellow;
+  background-color: rgb(44, 195, 233);
   color: black;
   text-align: center;
   font-weight: bold;
@@ -45,7 +45,7 @@
 
 .button:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 5px 2px #f6f200;
+  box-shadow: 0px 0px 5px 2px rgb(44, 195, 233);
 }
 
 .info a {

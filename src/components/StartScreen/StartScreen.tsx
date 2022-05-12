@@ -1,24 +1,23 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useOnScreen } from "../../utils";
-import profile from "../../assets/imgs/profile.jpg";
+import profile from "../../assets/imgs/foto javi.jpg";
 import s from "./StartScreen.module.css";
 
 const infoEn = {
   title: "Hi There 👋 I'm",
-  name: "Federico\nAvelin",
+  name: "Javier \nIrigoyen Terre",
   subtitle: "Fullstack Web Developer",
-  // description: "A fullstack developer from Argentina, I ❤️ React and Express.",
   description:
-    "Excellent predisposition for teamwork, maintaining the ability to develop projects that are scalable and modular. I ❤️ React and Express.",
+    "Arriving together is the beginning. Keeping together is progress. Working together is success.",
   button: "Hire Me",
 };
 
 const infoEs = {
   title: "Hola 👋 Soy",
-  name: "Federico\nAvelin",
+  name: "Javier\nIrigoyen Terre",
   subtitle: "Desarrollador Web Fullstack",
   description:
-    "Excelente predisposición para el trabajo en equipo, manteniendo la capacidad de desarrollar proyectos que sean escalables y modulables. Me ❤️ React y Express.",
+    "Llegar juntos es el principio. Mantenerse juntos, es el progreso. Trabajar juntos es el éxito.",
   button: "Contrátame",
 };
 

@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/imgs/logo.png";
 import Sidebar from "./Sidebar/Sidebar";
 import Flags from "./Flags/Flags";
 import s from "./NavBar.module.css";
@@ -37,7 +36,7 @@ export function NavItem({ title, select, index, lang }: Item) {
   return (
     <div className={s.item}>
       <a
-        style={title === select ? { color: "yellow", fontWeight: "bold" } : {}}
+        style={title === select ? { color: "aqua", fontWeight: "bold" } : {}}
         href={`#${title[0].toLocaleLowerCase() + title.substr(1)}`}
       >
         {lang === "es" ? itemsEs[index] : title}
@@ -51,7 +50,7 @@ function NavBar({ select, setLang, lang }: NavProps) {
     <div className={s.nav}>
       <div className={s.container}>
         <a href="#home">
-          <img src={logo} alt="logo" />
+         
         </a>
         <div className={s.buttons}>
           {items.map((item, index) => (

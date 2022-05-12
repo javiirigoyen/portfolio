@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import about from "../../assets/imgs/about2.jpg";
+import about from "../../assets/imgs/about3.jpg";
 import Dots from "../Dots/Dots";
 import { useOnScreen } from "../../utils";
 import s from "./About.module.css";
@@ -14,15 +14,15 @@ interface Description {
 }
 
 const description: Description = {
-  en: `I'm Federico Avelin, FullStack developer. I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create enjoyable experiences. I perfect my skills every day, to keep up to date and continue advancing in my career as a developer.\n\nI develop websites with HTML, CSS and JavaScript. For the front, I love to use React alongside Redux, and for the back Express along with PostgresSQL and Sequelize.\n\nI always work to achieve the best result in each project that I have in my hands, with me you will find someone who will not give up easily.`,
-  es: `Soy Federico Avelin, desarrollador FullStack. Me apasiona aprovechar mis diversos antecedentes para descifrar problemas desafiantes y crear experiencias agradables. Perfecciono mis habilidades todos los días, para mantenerme actualizado y seguir avanzando en mi carrera como desarrollador.\n\nDesarrollo sitios web con HTML, CSS y JavaScript. Para el front, me encanta usar React junto con Redux, y para el back Express junto con PostgresSQL y Sequelize.\n\nSiempre trabajo para lograr el mejor resultado en cada proyecto que tengo en mis manos, conmigo encontrarás a alguien que no se rendirá fácilmente.`,
+  en: `I'm Javier Irigoyen Terre, FullStack developer. I am a person passionate about development, eager to learn and be able to contribute all my knowledge to a team. I am very responsible when it comes to doing a job, always offering my best productivity. I am open to receiving both criticism and help when I think I need it. I like to work as a team because I think it allows us to divide the work and multiply the results. With great ability to constantly update knowledge since for the world of technology it is necessary to be learning something new all the time.`,
+  es: `Soy Javier Irigoyen Terre, desarrollador FullStack. Soy una persona apasionada por el desarrollo, con ganas de aprender y poder aportar todos mis conocimientos a un equipo. Soy muy responsable a la hora de realizar un trabajo, siempre ofreciendo mi mayor productividad.Estoy abierto a recibir tanto criticas como ayuda cuando considero que la necesito, me gusta trabajar en equipo ya que considero que permite dividir el trabajo y multiplicar los resultados.Cuento con gran capacidad de actualizar los conocimientos constantemente ya que para el mundo de la tecnología es necesario estar aprendiendo algo nuevo todo el tiempo..`,
 };
 
 const link: string =
-  "https://drive.google.com/file/d/1SbpEuBhXu_17X85YFGg7HFuSl8UqvuGB/view?usp=sharing";
+  "https://drive.google.com/file/d/1dqGjn4SmvVOrZZtzzrrheTV3bjGjhcfM/view?usp=sharing";
 
 const linkEs: string =
-  "https://drive.google.com/file/d/1YknFJJPy9p7QfCPxH8VmoF-c3WZ5aU0J/view?usp=sharing";
+  "https://drive.google.com/file/d/1dqGjn4SmvVOrZZtzzrrheTV3bjGjhcfM/view?usp=sharing";
 
 function About({ setSelect, lang }: AboutProps) {
   const [start, setStart] = useState(false);

@@ -40,19 +40,7 @@ export const technologies: Tec[] = [
     title: "Git",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png",
   },
-  {
-    title: "Npm",
-    img: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg",
-  },
-  {
-    title: "Material UI",
-    img: "https://cdn.worldvectorlogo.com/logos/material-ui-1.svg",
-  },
-  {
-    title: "Linux",
-    img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
-  },
-  {
+ {
     title: "Postman",
     img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
   },
