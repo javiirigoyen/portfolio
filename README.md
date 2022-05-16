@@ -1,6 +1,6 @@
 # Mi portfolio
 
-<img src="./imgs/start.png" alt="start_screen"/>
+<img src="./imgs/inicio.png" alt="start_screen"/>
 
 ## Descripción
 
@@ -49,7 +49,11 @@ Sección projects. En ella podrán encontrar mis proyectos personales, tanto com
 
 ### Contact
 
+<<<<<<< HEAD
 <img src="./imgs/contactame.png" alt="contact"/>
+=======
+<img src="./imgs/contactactame.png" alt="contact"/>
+>>>>>>> 4cb2c5d (cambios)
 
 Sección contact. En ella podrán encontrar mis datos personales de contacto, así como también un formulario de contacto, donde recibirán un mail, tanto ustedes como yo, para luego poder comunicarme con ustedes. Para el email se utilizó EmailJS.
 
