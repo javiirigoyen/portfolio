@@ -25,19 +25,19 @@ Para ver todas las dependencias, puede comprobar el archivo <a href="./package.j
 
 ### Home
 
-<img src="./imgs/inicio.png" alt="home"/>
+<img src="./imgs/inicio.png" alt="inicio"/>
 
 Esta es la pantalla inicial de mi portfolio. En ella podrán encontrar un mensaje de bienvenida, junto a una breve descripción mía. También se encuentra mi foto de perfil. En el top, se encuentra la navbar, con acceso a todas las secciones de la web y un selector de idioma.
 
 ### About
 
-<img src="./imgs/sobremi.png" alt="about"/>
+<img src="./imgs/sobremi.png" alt="sobremi"/>
 
 Sección about. En ella podrán encontrar una descripción más detallada de mi persona, como también un link para descargar mi curriculum personal.
 
 ### Technologies
 
-<img src="./imgs/tecnologias.png" alt="technologies"/>
+<img src="./imgs/tecnologias.png" alt="tecnologias"/>
 
 Sección technologies. En ella podrán encontrar las tecnologías que actualmente me destaco.
 
@@ -49,11 +49,7 @@ Sección projects. En ella podrán encontrar mis proyectos personales, tanto com
 
 ### Contact
 
-<<<<<<< HEAD
-<img src="./imgs/contactame.png" alt="contact"/>
-=======
-<img src="./imgs/contactactame.png" alt="contact"/>
->>>>>>> 4cb2c5d (cambios)
+<img src="./imgs/contactame.png" alt="contactame"/>
 
 Sección contact. En ella podrán encontrar mis datos personales de contacto, así como también un formulario de contacto, donde recibirán un mail, tanto ustedes como yo, para luego poder comunicarme con ustedes. Para el email se utilizó EmailJS.
 

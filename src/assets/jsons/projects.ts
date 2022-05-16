@@ -45,8 +45,8 @@ export const projects: Project[] = [
       Encontraran mi información personal, proyectos y tecnologías.
       `,
     img: portfolio,
-    repo: "https://github.com/Fedex159/federico-avelin-portfolio",
-    prod: "https://federico-avelin-portfolio.vercel.app/",
+    repo: "https://github.com/javiirigoyen/portfolio",
+    prod: "https://portfolio-vert-psi-10.vercel.app/",
   },
  
 ];
