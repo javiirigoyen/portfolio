@@ -31,13 +31,13 @@ Esta es la pantalla inicial de mi portfolio. En ella podrán encontrar un mensaj
 
 ### About
 
-<img src="./imgs/sobremi.png" alt="about"/>
+<img src="./imgs/about.png" alt="about"/>
 
 Sección about. En ella podrán encontrar una descripción más detallada de mi persona, como también un link para descargar mi curriculum personal.
 
 ### Technologies
 
-<img src="./imgs/tecnologias.png" alt="technologies"/>
+<img src="./imgs/tecnologies.png" alt="technologies"/>
 
 Sección technologies. En ella podrán encontrar las tecnologías que actualmente me destaco.
 
@@ -49,12 +49,8 @@ Sección projects. En ella podrán encontrar mis proyectos personales, tanto com
 
 ### Contact
 
-<img src="./imgs/contactame.png" alt="contact"/>
+<img src="./imgs/contact.png" alt="contact"/>
 
 Sección contact. En ella podrán encontrar mis datos personales de contacto, así como también un formulario de contacto, donde recibirán un mail, tanto ustedes como yo, para luego poder comunicarme con ustedes. Para el email se utilizó EmailJS.
 
-### Responsive
 
-<img src="./imgs/responsive.png" alt="responsive"/>
-
-La web es full responsive para utilizar en la mayoria de dispositivos.

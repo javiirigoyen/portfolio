@@ -1,6 +1,6 @@
 import webService from "../imgs/web-service.png";
 import videoGames from "../imgs/videogame.png";
-import foods from "../imgs/videogame.png";
+import foods from "../imgs/foods.png";
 import portfolio from "../imgs/portafolio.png";
 
 export interface Project {
@@ -32,7 +32,7 @@ export const projects: Project[] = [
       "App de Comidas. Algunas de las funciones principales son: búsqueda de comidas, filtrado, creación de nuevas recetas, paginación. ",
     img: foods,
     repo: "https://github.com/javiirigoyen/PI-FOODS",
-    prod: "https://deploy-client-foods.herokuapp.com/",
+    prod: "https://pi-foodss.vercel.app/",
   },
   {
     title: "Portfolio",
