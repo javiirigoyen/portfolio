@@ -37,7 +37,7 @@ Sección about. En ella podrán encontrar una descripción más detallada de mi 
 
 ### Technologies
 
-<img src="./imgs/tecnologies.png" alt="technologies"/>
+<img src="./imagenes/tecnologies.png" alt="technologies"/>
 
 Sección technologies. En ella podrán encontrar las tecnologías que actualmente me destaco.
 
